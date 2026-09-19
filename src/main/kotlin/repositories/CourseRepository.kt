@@ -15,4 +15,8 @@ object CourseRepository {
         courses.add(Course(6L, "Inteligencia Artificial", "2026-11-09", "21:00", "Campus Palermo", "Elena White", "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=768&q=80", 12))
         courses.add(Course(7L, "Bases de Datos", "2026-12-01", "20:00", "Online", "Arnold Schwarzenegger", "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=768&q=80", 40))
     }
+
+    fun get(): List<Course> {
+        return courses
+    }
 }

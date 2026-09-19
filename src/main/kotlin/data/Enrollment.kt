@@ -3,5 +3,6 @@
 data class Enrollment(
     val id: Long,
     val userId: Long,
-    val coursesIds: MutableList<Long>
+    val coursesIds: MutableList<Long>,
+    val completedCoursesIds: MutableList<Long>
 )

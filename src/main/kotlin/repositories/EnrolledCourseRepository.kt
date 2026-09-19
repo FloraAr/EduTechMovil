@@ -15,4 +15,9 @@ object EnrolledCourseRepository {
         enrolledCourses.add(EnrolledCourse(6L, 6L, 45, "Presencial"))
         enrolledCourses.add(EnrolledCourse(7L, 7L, 60, "Virtual"))
     }
+
+    //Obtener cursos
+    fun get(): List<EnrolledCourse> {
+        return enrolledCourses
+    }
 }

@@ -12,8 +12,23 @@ object UserRepository {
         users.add(User(1510L, "agus_maldonado", "1234", "Agustina Belen", "Arce Maldonado", 120000.0, "2018/04/15"))
     }
 
-    fun login(): User? {
-        return null
+    fun login(nickname: String, password: String): User? {
+
+        return users.find {
+            //Busca al usuario
+            it.nickname == nickname && it.password == password
+        }
     }
 
+    //Me devuelve todos los usuarios
+    fun get(): List<User> {
+        return users
+    }
+
+    fun getById(id: Long): User? {
+
+        return users.find {
+            it.id == id
+        }
+    }
 }
